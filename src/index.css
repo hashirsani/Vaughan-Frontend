@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@keyframes jump {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.jump-animation {
+  animation: jump 0.5s ease;
+}
