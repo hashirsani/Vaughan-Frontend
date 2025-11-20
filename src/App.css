@@ -30,3 +30,12 @@
 .jump-animation {
   animation: jump 0.5s ease;
 }
+.hidden-site {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show-site {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}

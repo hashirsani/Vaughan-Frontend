@@ -7,11 +7,13 @@
 .fancy-loader div {
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #FEC509;          /* GOLD */
   border-radius: 50%;
   animation: bounce 0.6s infinite alternate;
+  box-shadow: 0 0 12px rgba(254, 197, 9, 0.6); /* Golden Glow */
 }
 
+/* Delay for middle and last circle */
 .fancy-loader div:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -20,13 +22,14 @@
   animation-delay: 0.4s;
 }
 
+/* Bounce Animation */
 @keyframes bounce {
   0% {
     transform: translateY(0);
-    opacity: 0.7;
+    opacity: 0.6;
   }
   100% {
-    transform: translateY(-30px);
+    transform: translateY(-28px);
     opacity: 1;
   }
 }
