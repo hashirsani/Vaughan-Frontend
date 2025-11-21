@@ -16,7 +16,7 @@ const Upper = () => {
   ];
 
   const logoText = "Fluxion Studio";
-  const phoneNumber = "4379810224";
+  const phoneNumber = "+14379810224";
 
   // Detect scroll
   useEffect(() => {
@@ -52,7 +52,7 @@ const Upper = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 
-      bg-black/70 backdrop-blur-lg border-b border-[#FEC509]/20 shadow-lg`}
+      bg-black/70 backdrop-blur-lg border-b border-[#FEC509]/20 shadow-lg hover:cursor-pointer`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between text-white">
         {/* Logo */}
@@ -84,7 +84,7 @@ const Upper = () => {
           </ul>
 
         <a
-  href="tel:4379810224"
+  href="tel:+14379810224"
   className="ml-8 px-6 py-3 flex items-center space-x-2 bg-[#FEC509] text-black 
   font-semibold rounded-lg shadow-md hover:bg-[#e6b607] transition"
 >
@@ -151,7 +151,7 @@ const Upper = () => {
 
             <li className="w-full">
   <a
-    href="tel:4379810224"
+    href="tel:+14379810224"
     className="w-full py-3 mt-4 flex items-center justify-center space-x-2 
     bg-[#FEC509] text-black font-bold rounded-lg hover:bg-[#e6b607] shadow-md"
   >

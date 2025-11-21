@@ -90,7 +90,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="min-h-screen bg-[#1D1E22] pt-24 pb-20 text-white"
+      className="min-h-screen bg-[#1D1E22] pt-24 pb-20 text-white hover:cursor-pointer"
     >
       <section className="px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto">

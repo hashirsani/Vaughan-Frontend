@@ -36,6 +36,7 @@ function Properties() {
         bg-cover bg-center relative 
         px-4 sm:px-0 py-8 sm:py-12
         min-h-[427px] lg:min-h-[500px]
+        hover:cursor-pointer
       "
       style={{
         backgroundImage: `url(${backgroundImage})`,

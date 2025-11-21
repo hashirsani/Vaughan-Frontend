@@ -15,7 +15,7 @@ function Reason() {
   ];
 
   return (
-    <div className="w-full flex flex-col lg:flex-row bg-[#1D1E22] overflow-hidden min-h-screen lg:min-h-[600px]">
+    <div className="w-full flex flex-col lg:flex-row bg-[#1D1E22] overflow-hidden min-h-screen lg:min-h-[600px] hover:cursor-pointer">
 
       {/* Left image */}
       <motion.div

@@ -88,11 +88,19 @@ function First() {
     setParallax({ x, y });
   };
 
+  const scrollToContact = () => {
+  const section = document.getElementById("contact");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+
   return (
     <section
       ref={ref}
       onMouseMove={handleMouseMove}
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full h-screen overflow-hidden hover:cursor-pointer"
       id="home"
     >
       {/* BACKGROUND IMAGES */}
@@ -141,12 +149,14 @@ function First() {
         </motion.p>
 
         <motion.button
-          whileHover={{ scale: 1.07, backgroundColor: "#E5AE00" }}
-          whileTap={{ scale: 0.95 }}
-          className="mt-6 sm:mt-8 px-6 sm:px-10 py-3 sm:py-4 w-full sm:w-auto bg-[#FEC509] text-[#000000] text-lg font-semibold rounded-lg shadow-xl cursor-pointer"
-        >
-          Get Started →
-        </motion.button>
+  whileHover={{ scale: 1.07, backgroundColor: "#E5AE00" }}
+  whileTap={{ scale: 0.95 }}
+  onClick={scrollToContact}
+  className="mt-6 sm:mt-8 px-6 sm:px-10 py-3 sm:py-4 w-full sm:w-auto bg-[#FEC509] text-[#000000] text-lg font-semibold rounded-lg shadow-xl cursor-pointer"
+>
+  Get Started →
+</motion.button>
+
       </div>
     </section>
   );

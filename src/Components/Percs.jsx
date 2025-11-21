@@ -7,14 +7,14 @@ const GOLD_HOVER = "#E5AE00";
 
 const Percs = () => {
   const steps = [
-    { title: "Identify problem", desc: "This box could corrode over loose connection, dust", icon: <TbAlertTriangle />, step: "Step 01" },
-    { title: "Provide time & cost", desc: "This box could corrode over loose connection, dust", icon: <TbPlug />, step: "Step 02" },
-    { title: "Implement service", desc: "This box could corrode over loose connection, dust", icon: <GiAutoRepair />, step: "Step 03" },
-    { title: "Final Quality Check", desc: "This box could corrode over loose connection, dust", icon: <TbBulb />, step: "Step 04" },
+    { title: "Identify problem", desc: "We inspect your issue thoroughly to find the exact root cause—no guesswork, only precision", icon: <TbAlertTriangle />, step: "Step 01" },
+    { title: "Provide time & cost", desc: "We share a clear, upfront estimate with accurate timing and transparent pricing—no surprises later.", icon: <TbPlug />, step: "Step 02" },
+    { title: "Implement service", desc: "Our certified technicians get to work with professional tools and dependable expertise from start to finish.", icon: <GiAutoRepair />, step: "Step 03" },
+    { title: "Final Quality Check", desc: "We double-check every detail to ensure flawless performance and lasting reliability before we leave.", icon: <TbBulb />, step: "Step 04" },
   ];
 
   return (
-    <div id="perks" className="w-full py-20 bg-[#1A1A1A]">
+    <div id="perks" className="w-full py-20 bg-[#1A1A1A] hover:cursor-pointer">
       <h1 className="text-center text-3xl sm:text-4xl font-bold mb-3 text-white">
         We provide electrical
       </h1>

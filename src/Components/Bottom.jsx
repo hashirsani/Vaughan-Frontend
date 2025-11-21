@@ -9,7 +9,7 @@ const GOLD_HOVER = "#E5AE00";
 
 const Bottom = () => {
   return (
-    <div className='bg-white flex justify-center'>
+    <div className='bg-white flex justify-center hover:cursor-pointer'>
 
       <section className="w-full flex flex-col lg:flex-row pt-12 lg:pt-20">
 
