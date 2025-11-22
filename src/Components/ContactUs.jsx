@@ -67,7 +67,7 @@ const ContactUs = () => {
             animate={contactInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <h2 className="text-3xl sm:text-4xl font-extrabold mb-6">
+            <h2 className="text-3xl sm:text-4xl font-extrabold mb-6 text-black">
               Ready to Start Your Project?
             </h2>
 
