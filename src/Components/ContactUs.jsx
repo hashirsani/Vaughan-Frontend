@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import React, { useRef, useState, useEffect } from "react";
 // import { motion, useInView } from "framer-motion";
 // import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -199,6 +200,8 @@
 
 
 
+=======
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -215,7 +218,10 @@ const ContactUs = () => {
   const [statusMessage, setStatusMessage] = useState("");
   const [statusType, setStatusType] = useState(""); // "success" or "error"
   const [backendStatus, setBackendStatus] = useState(""); // health check
+<<<<<<< HEAD
   const [loading, setLoading] = useState(false); // new loading state
+=======
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -223,7 +229,10 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     setLoading(true); // disable button while sending
+=======
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
     try {
       const res = await fetch("https://vaughan-backend.onrender.com/send-email", {
         method: "POST",
@@ -241,6 +250,7 @@ const ContactUs = () => {
         setStatusMessage(data.message || "Failed to send email.");
         setStatusType("error");
       }
+<<<<<<< HEAD
     } catch (err) {
       console.error("Network error:", err);
       setStatusMessage("Network error. Try again!");
@@ -248,6 +258,15 @@ const ContactUs = () => {
     } finally {
       setLoading(false);
       setTimeout(() => setStatusMessage(""), 5000); // hide after 5s
+=======
+
+      setTimeout(() => setStatusMessage(""), 5000); // hide after 5s
+    } catch (err) {
+      setStatusMessage("Failed to send email. Try again!");
+      setStatusType("error");
+      setTimeout(() => setStatusMessage(""), 5000);
+      console.error(err);
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
     }
   };
 
@@ -263,7 +282,11 @@ const ContactUs = () => {
     <div id="contact" className="min-h-screen bg-gray-900 text-white overflow-hidden">
       <section ref={contactRef} className="py-16 sm:py-24 px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
           {/* Left Side — Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -381,13 +404,20 @@ const ContactUs = () => {
 
               <motion.button
                 type="submit"
+<<<<<<< HEAD
                 disabled={loading} // disable while sending
+=======
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
                 whileHover={{ scale: 1.02, backgroundColor: GOLD_HOVER }}
                 whileTap={{ scale: 0.98 }}
                 className="w-full py-3 sm:py-4 font-semibold rounded-lg shadow-lg transition duration-300 cursor-pointer"
                 style={{ backgroundColor: GOLD_ACCENT, color: BLACK_TEXT }}
               >
+<<<<<<< HEAD
                 {loading ? "Sending..." : "Send Inquiry"}
+=======
+                Send Inquiry
+>>>>>>> b9e7635d33741f9554ac1ebd8847174b20ffcd1b
               </motion.button>
             </form>
           </motion.div>
