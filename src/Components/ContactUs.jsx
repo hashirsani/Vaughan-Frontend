@@ -57,7 +57,7 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div id="contact" className="min-h-screen bg-gray-900 text-white overflow-hidden">
+    <div id="contact" className="min-h-screen bg-gray-900 text-yellow-400 overflow-hidden">
       <section ref={contactRef} className="py-16 sm:py-24 px-6 sm:px-10 lg:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
