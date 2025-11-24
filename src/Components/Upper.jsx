@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import Logo from "../assets/images/Landscape png.png";
+import mobileLogo from "../assets/images/Icon logo png.png"
 
 const Upper = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,12 +58,30 @@ const Upper = () => {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-4 flex items-center justify-between text-white">
         {/* Logo */}
-        <div
-          className="text-2xl font-extrabold cursor-pointer text-[#FEC509]"
-          onClick={() => handleScrollTo("home")}
-        >
-          {logoText}
-        </div>
+        {/* Logo for Desktop */}
+<div
+  className="hidden md:block text-2xl font-extrabold cursor-pointer text-[#FEC509]"
+  onClick={() => handleScrollTo("home")}
+>
+  <img
+    src={Logo}
+    alt="Fluxion Studio Logo"
+    className="h-20 w-64"
+  />
+</div>
+
+{/* Logo for Mobile */}
+<div
+  className="md:hidden flex items-center"
+  onClick={() => handleScrollTo("home")}
+>
+  <img
+    src={mobileLogo}
+    alt="Fluxion Studio Mobile Logo"
+    className="h-16 w-auto"
+  />
+</div>
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -83,17 +103,14 @@ const Upper = () => {
             ))}
           </ul>
 
-        <a
-  href="tel:+14379810224"
-  className="ml-8 px-6 py-3 flex items-center space-x-2 bg-[#FEC509] text-black 
+          <a
+            href="tel:+14379810224"
+            className="ml-8 px-6 py-3 flex items-center space-x-2 bg-[#FEC509] text-black 
   font-semibold rounded-lg shadow-md hover:bg-[#e6b607] transition"
->
-  <Phone size={18} />
-  <span>Call Us</span>
-</a>
-
-
-        
+          >
+            <Phone size={18} />
+            <span>Call Us</span>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -150,16 +167,15 @@ const Upper = () => {
             ))}
 
             <li className="w-full">
-  <a
-    href="tel:+14379810224"
-    className="w-full py-3 mt-4 flex items-center justify-center space-x-2 
+              <a
+                href="tel:+14379810224"
+                className="w-full py-3 mt-4 flex items-center justify-center space-x-2 
     bg-[#FEC509] text-black font-bold rounded-lg hover:bg-[#e6b607] shadow-md"
-  >
-    <Phone size={20} />
-    <span>Call Us</span>
-  </a>
-</li>
-
+              >
+                <Phone size={20} />
+                <span>Call Us</span>
+              </a>
+            </li>
           </ul>
         </div>
       </motion.div>
