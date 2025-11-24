@@ -66,7 +66,7 @@ const Upper = () => {
   <img
     src={Logo}
     alt="Fluxion Studio Logo"
-    className="h-20 w-64"
+    className="h-20 w-60"
   />
 </div>
 
@@ -78,7 +78,7 @@ const Upper = () => {
   <img
     src={mobileLogo}
     alt="Fluxion Studio Mobile Logo"
-    className="h-16 w-auto"
+    className="h-20 w-20"
   />
 </div>
 
