@@ -78,7 +78,7 @@ const Upper = () => {
   <img
     src={mobileLogo}
     alt="Fluxion Studio Mobile Logo"
-    className="h-20 w-20"
+    className="h-16 w-16"
   />
 </div>
 
@@ -124,61 +124,6 @@ const Upper = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {/* <motion.div
-        ref={menuRef}
-        initial="closed"
-        animate={menuOpen ? "open" : "closed"}
-        variants={menuVariants}
-        transition={{ duration: 0.3 }}
-        className="fixed top-0 right-0 h-screen w-72 bg-black shadow-2xl md:hidden text-white"
-      >
-        <div className="p-6 h-full flex flex-col">
-          <div className="flex justify-end pt-2">
-            <button
-              onClick={() => setMenuOpen(false)}
-              className="text-white p-2 rounded-lg hover:bg-black/40"
-            >
-              <X size={28} />
-            </button>
-          </div>
-
-          <ul className="flex flex-col items-start space-y-3 text-lg font-semibold mt-10 flex-1">
-            {links.map((link, index) => (
-              <motion.li
-                key={link.name}
-                className="w-full"
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.2, delay: 0.1 + index * 0.05 }}
-              >
-                <button
-                  onClick={() => handleScrollTo(link.id)}
-                  className={`block w-full py-3 px-4 rounded-lg border-l-4 transition-all
-                  ${
-                    activeLink === link.id
-                      ? "bg-[#FEC509] text-black border-black"
-                      : "hover:bg-black/40 hover:border-[#FEC509] text-white"
-                  }`}
-                >
-                  {link.name}
-                </button>
-              </motion.li>
-            ))}
-
-            <li className="w-full">
-              <a
-                href="tel:+14379810224"
-                className="w-full py-3 mt-4 flex items-center justify-center space-x-2 
-    bg-[#FEC509] text-black font-bold rounded-lg hover:bg-[#e6b607] shadow-md"
-              >
-                <Phone size={20} />
-                <span>Call Us</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </motion.div> */}
 
 
 
