@@ -78,7 +78,7 @@ const Upper = () => {
   <img
     src={mobileLogo}
     alt="Fluxion Studio Mobile Logo"
-    className="h-16 w-16"
+    className="h-12 w-12"
   />
 </div>
 
