@@ -66,7 +66,7 @@ const Upper = () => {
   <img
     src={Logo}
     alt="Fluxion Studio Logo"
-    className="h-20 w-60"
+    className="h-[70px] w-48  "
   />
 </div>
 
