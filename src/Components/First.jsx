@@ -3,11 +3,11 @@ import { motion, useInView } from "framer-motion";
 
 // Images
 import first from "../assets/images/—Pngtree—black and white background with_15450361.jpg";
-import second from "../assets/images/second.webp";
-import forth from "../assets/images/Close-up hand of electrical engineering using measuring to checking electricity_ _ Premium Photo.webp";
-import fifth from "../assets/images/Baixar eletricista engenheiro com plano para Verifica elétrico fornecem dentro frente do ao controle fusível quadro de distribuição gratuitamente.webp";
-import sixth from "../assets/images/fifth.webp";
-import seventh from "../assets/images/seventh.jpeg";
+import second from "../assets/images/burning-lamp-hangs-dark-blurred-background-space-text.jpg";
+import forth from "../assets/images/view-male-engineer-work-engineers-day-celebration.jpg";
+import fifth from "../assets/images/electrician-working-switchboard-with-electrical-connection-cable-copy-space.jpg";
+import sixth from "../assets/images/male-electrician-overalls-focused-work-switchboard-with-fuses-using-tablet (3).jpg";
+//import seventh from "../assets/images/male-electrician-works-switchboard-overalls-against-backdrop-emergency-lighting.jpg";
 
 // Custom hook for typing effect
 const useTypingEffect = (
@@ -53,7 +53,7 @@ const useTypingEffect = (
 };
 
 function First() {
-  const images = [first, second, forth, fifth, sixth, seventh];
+  const images = [first, second, forth, fifth, sixth];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Typing text lines (hookup lines about electrical solutions)
