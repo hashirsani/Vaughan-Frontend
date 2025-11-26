@@ -53,7 +53,7 @@ const useTypingEffect = (
 };
 
 function First() {
-  const images = [first, second, forth, fifth, sixth];
+  const images = [forth,fifth, sixth,first, second];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Typing text lines (hookup lines about electrical solutions)
