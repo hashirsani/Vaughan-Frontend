@@ -2,11 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
 // Images
-import first from "../assets/images/—Pngtree—black and white background with_15450361.jpg";
-import second from "../assets/images/burning-lamp-hangs-dark-blurred-background-space-text.jpg";
-import forth from "../assets/images/view-male-engineer-work-engineers-day-celebration.jpg";
-import fifth from "../assets/images/electrician-working-switchboard-with-electrical-connection-cable-copy-space.jpg";
-import sixth from "../assets/images/male-electrician-overalls-focused-work-switchboard-with-fuses-using-tablet (3).jpg";
+import first from "../assets/images/—Pngtree—black and white background with_15450361 (1).webp";
+import second from "../assets/images/burning-lamp-hangs-dark-blurred-background-space-text.webp";
+import forth from "../assets/images/view-male-engineer-work-engineers-day-celebration.webp";
+import fifth from "../assets/images/electrician-working-switchboard-with-electrical-connection-cable-copy-space.webp";
+import sixth from "../assets/images/male-electrician-overalls-focused-work-switchboard-with-fuses-using-tablet (3).webp";
 //import seventh from "../assets/images/male-electrician-works-switchboard-overalls-against-backdrop-emergency-lighting.jpg";
 
 // Custom hook for typing effect
