@@ -18,7 +18,7 @@ function App() {
 
     if (isMobile) {
       // Mobile: Skip full load waiting → Hide loader fast
-      setTimeout(() => setLoading(false), 5000);
+      setTimeout(() => setLoading(false), 2000);
     } else {
       // Desktop: Wait until EVERYTHING is loaded
       window.onload = () => setLoading(false);
