@@ -177,27 +177,18 @@ function Properties() {
       cursor-pointer
       border border-[#FEC509]/40
       transition-all duration-300
-      bg-white/50
+      bg-[#1D1E22]
       backdrop-blur-sm
       hover:scale-[1.04]
     "
   >
-    {/* BACKGROUND IMAGE */}
-    {item.back && (
-      <img
-        src={item.back}
-        className="
-          absolute inset-0 w-full h-full object-cover
-        "
-        alt=""
-      />
-    )}
 
     {/* BLUR + DARK OVERLAY (this fixes everything) */}
     {item.back && (
       <div
         className="
           absolute inset-0
+          
           h-52
         "
       ></div>
