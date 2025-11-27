@@ -181,11 +181,11 @@ import forth from "../assets/images/view-male-engineer-work-engineers-day-celebr
 import fifth from "../assets/images/electrician-working-switchboard-with-electrical-connection-cable-copy-space.webp";
 import sixth from "../assets/images/male-electrician-overalls-focused-work-switchboard-with-fuses-using-tablet (3).webp";
 
-import Mobile1 from "../assets/images/Mobile1.jpg";
-import Mobile2 from "../assets/images/Mobile2.jpg";
-import Mobile3 from "../assets/images/Mobile3.jpg";
-import Mobile4 from "../assets/images/Mobile4.jpg";
-import Mobile5 from "../assets/images/Mobile5.jpg";
+import Mobile1 from "../assets/images/Mobile1.webp";
+import Mobile2 from "../assets/images/Mobile2.webp";
+import Mobile3 from "../assets/images/Mobile3.webp";
+import Mobile4 from "../assets/images/Mobile4.webp";
+import Mobile5 from "../assets/images/Mobile5.webp";
 
 // Typing Effect Hook
 const useTypingEffect = (
