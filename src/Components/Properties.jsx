@@ -150,10 +150,9 @@ function Properties() {
         w-full flex justify-center items-center
         bg-cover bg-center relative
         px-4 sm:px-0 py-8 sm:py-12
-        min-h-[427px] lg:min-h-[500px]
-      "
+        min-h-[427px] lg:min-h-[500px] bg-black      "
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        //backgroundImage: `url(${backgroundImage})`,
       }}
     >
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
@@ -165,71 +164,70 @@ function Properties() {
         className="relative flex flex-wrap gap-4 sm:gap-8 justify-center items-center z-10"
       >
         {array.map((item, index) => (
-          <div
-            key={index}
-            className="
-              group relative overflow-hidden
-              flex flex-col justify-center items-center
-              space-y-3 sm:space-y-4
-              p-3 sm:p-4
-              rounded-lg shadow-lg
-              h-[180px] sm:h-[200px]
-              w-full sm:w-[300px]
-              cursor-pointer
-              border border-[#FEC509]/40
-              transition-all duration-300
-              bg-white/50
-              backdrop-blur-md
-              hover:scale-[1.04]
-            "
-          >
-            {/* BACKGROUND IMAGE INSIDE BOX */}
-            {item.back && (
-              <img
-                src={item.back}
-                className="
-                  absolute inset-0 w-full h-full object-cover
-                  opacity-90
-                "
-                alt=""
-              />
-            )}
+  <div
+    key={index}
+    className="
+      group relative overflow-hidden
+      flex flex-col justify-center items-center
+      space-y-3 sm:space-y-4
+      p-3 sm:p-4
+      rounded-lg shadow-lg
+      h-[180px] sm:h-[200px]
+      w-full sm:w-[300px]
+      cursor-pointer
+      border border-[#FEC509]/40
+      transition-all duration-300
+      bg-white/50
+      backdrop-blur-sm
+      hover:scale-[1.04]
+    "
+  >
+    {/* BACKGROUND IMAGE */}
+    {item.back && (
+      <img
+        src={item.back}
+        className="
+          absolute inset-0 w-full h-full object-cover
+        "
+        alt=""
+      />
+    )}
 
-            {/* BLUR + DARK OVERLAY */}
-            {item.back && (
-              <div
-                className="
-                  absolute inset-0
-                  blur-md                
-                  
-                "
-              ></div>
-            )}
+    {/* BLUR + DARK OVERLAY (this fixes everything) */}
+    {item.back && (
+      <div
+        className="
+          absolute inset-0
+          h-52
+        "
+      ></div>
+    )}
 
-            {/* FOREGROUND CONTENT */}
-            <div className="relative z-20 flex flex-col items-center">
-              <div
-                className="
-                  text-black 
-                  text-4xl sm:text-5xl
-                "
-              >
-                {item.pic}
-              </div>
+    {/* FOREGROUND CONTENT */}
+    <div className="relative z-20 flex flex-col items-center">
+      <div
+        className="
+          text-[#FEC509]
+          text-4xl sm:text-5xl
+        "
+      >
+        {item.pic}
+      </div>
 
-              <span
-                className="
-                  text-[#FEC509]
-                  font-bold 
-                  text-2xl sm:text-3xl 
-                  text-center
-                "
-              >
-                {item.text}
-              </span>
-            </div>
-          </div>
-        ))}
+      <span
+        className="
+          text-[#FEC509]
+          font-bold 
+          text-2xl sm:text-3xl 
+          text-center
+        "
+      >
+        {item.text}
+      </span>
+    </div>
+  </div>
+))}
+
       </motion.div>
     </div>
   );
