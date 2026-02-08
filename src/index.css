@@ -1,4 +1,37 @@
 @import "tailwindcss";
+
+@theme {
+  /* CHANGE 1: The Identity Color
+     Old: #FEC509 (Gold) -> New: #388E3C (Lush Green) 
+  */
+  --color-gold: #388E3C; 
+
+  /* CHANGE 2: The Hover State
+     Old: #E5AE00 -> New: #2E7D32 (Darker Green)
+  */
+  --color-gold-hover: #2E7D32;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    /* CHANGE 3: Default Background
+       Force the site to feel "Clean" by default, not "Dark" 
+    */
+    @apply bg-gray-50 text-gray-900 transition-colors duration-300;
+  }
+}
+
+
+
+
+/* @import "tailwindcss";
+
+
+@variant dark (&:where(.dark, .dark *));
+
+
 @keyframes jump {
   0% { transform: translateY(0); }
   40% { transform: translateY(-15px); }
@@ -7,4 +40,4 @@
 
 .jump-animation {
   animation: jump 0.5s ease;
-}
+} */
